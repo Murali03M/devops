@@ -1,0 +1,31 @@
+Ansible notes 
+
+
+inventory file will store the list of host machines ip address .
+
+In the inventory file , we can group the machines by their rokes and then we can run the playbook on the group of machines .
+
+
+ansible -i inventory all -m "shell" -a "ls -ltr" ;
+
+In the inventory file , we can group the machines by their rokes and then we can run the playbook on the group of machines .
+
+ansible -i inventory "group name" -m "shell" -a "ls -ltr" ;
+
+using square brackets we can specify the group name . 
+
+Ansible playbooks are written in yaml format .
+
+ansible-playbook -i inventory playbook.yaml ;--> Comment to run the playbook
+
+
+Ansible roles 
+
+
+ansible-galaxy role init kubernetes
+
+
+
+
+
+
